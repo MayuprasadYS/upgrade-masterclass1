@@ -27,6 +27,11 @@
     src: url(./fonts/CabinetGrotesk-Medium.otf);
 }
 
+@font-face {
+    font-family: inter-semibold;
+    src: url(./fonts/Inter-SemiBold.otf);
+}
+
 *,
 :after,
 :before {
@@ -964,6 +969,7 @@ width: 100%;
     width: 100%;
     z-index: 5;
     padding-top: 85px;
+    padding-bottom: 40px;
     background-color: #000;
     border-top: 2px solid hsla(0, 0%, 100%, .906);
     overflow: hidden;
@@ -978,3 +984,263 @@ width: 100%;
     font-weight:1100;
   }
 
+.section-7-content .teamcontainer1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 25px;
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.section-7-content .teamcontainer1 .section-7-teamitem {
+    position: relative;
+    background: #091010;
+    padding: 5% 20px 8%;
+    text-align: center;
+    border: 1px solid #6c6c6c;
+    outline: none;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.section-7-content .teamcontainer1 .section-7-teamitem img {
+    width: 85px;
+    padding-top: 20%;
+}
+
+.section-7-content .teamcontainer1 .section-7-teamitem  .section-7-designation {
+    font-size: 16px;
+    font-family: inter-reg;
+    color: #fff;
+}
+
+
+.section-7-content .teamcontainer1 .section-7-teamitem  .section-7-designation-border {
+    width: 60%;
+    height: 2px;
+    background: #e82a3d;
+    margin: 15px auto;
+}
+
+.section-7-content .section-7-title2 {
+    padding-top: 100px;
+}
+
+.section-7-content .section-7-title2-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-family: c-bold;
+    line-height: 160%;
+    text-align: center;
+    padding-bottom: 2%;
+    color: #fff;
+}
+
+.section-7-content .section-7-teamcontainer2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    overflow-x: scroll;
+    padding: 27px 180px 33px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2%;
+    gap: 2%;
+}
+
+.section-7-content .section-7-teamcontainer2::-webkit-scrollbar {
+    display: none;
+}
+
+
+.section-7-content .section-7-teamcontainer2 .section-7-teamitem2 {
+    position: relative;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    outline: none;
+    height: 100%;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.section-7-content .section-7-teamcontainer2 .section-7-teamitem2:not(:last-child) {
+    margin-right: 10px;
+}
+
+.section-7-content .section-7-teamcontainer2 .section-7-teamitem2 img {
+    width: 130.73px;
+    height: 130.73px;
+    border: 2px solid #fbc230;
+    padding: 4px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.section-7-content .section-7-teamcontainer2 .section-7-teamitem2 .section-7-name {
+    font-size: 19px;
+    font-family: inter-semibold;
+    color: #fbc230;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.section-7-content .section-7-teamcontainer2 .section-7-teamitem2 .section-7-designation {
+    font-size: 16px;
+    font-family: inter-light;
+    color: #fff;
+    text-align: center;
+    max-width: 390px;
+    line-height: 160%;
+}
+
+.section-7-content .section-7-title3 {
+    padding-top: 85px;
+    font-size: 45px;
+    font-family: c-bold;
+    line-height: 130%;
+    text-align: center;
+    padding-bottom: 2%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.section-7-content .section-7-title3 span {
+    color: #fbc230;
+}
+
+.section-7-content .section-7-buttongradient {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 20;
+}
+
+.section-7-content .section-7-buttongradient p {
+    display: inline-block;
+    background-image: linear-gradient(90deg, #ffbc00, #fd4c35, #ff1e78);
+    color: #fff;
+    font-size: 14px;
+    font-family: inter-reg;
+    cursor: pointer;
+    padding: 15px 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 45px;
+    margin-top: 0;
+}
+
+.section-7-content .section-7-buttongradient p:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #fff, #fff, #fff);
+    transition: all .4s;
+    z-index: -1;
+    opacity: 0;
+    overflow: hidden;
+    border-radius: 45px;
+}
+
+.section-7-content .section-7-buttongradient p:hover {
+    color: #ec6859;
+}
+
+.section-7-content .section-7-buttongradient p:hover:after {
+    opacity: 1;
+    width: 100%;
+}
+
+
+
+.footer-footer {
+    height: 100vh;
+    position: relative;
+    z-index: 5;
+    margin-top: -20px;
+}
+
+.footer-footer .footer-container {
+    background-color: #fff;
+    z-index: 9;
+    padding-bottom: 50px;
+    height: 100%;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.footer-footer .footer-container .footer-fixed img {
+    width: 256.55px;
+    height: 108.29px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.footer-footer .footer-container .footer-social {
+    display: flex;
+    justify-content: center;
+    margin-left: 3%;
+    background-color: #fff;
+    padding-top: 20px;
+}
+
+.footer-footer .footer-container .footer-social a {
+    align-items: center;
+    display: flex;
+    margin-right: 60px;
+}
+
+.footer-footer .footer-container .footer-privacypolicy {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 19px;
+    font-family: inter-medium;
+    color: #000;
+}
+
+
+.footer-footer .footer-container .footer-privacypolicy .footer-sitedesign {
+    padding-bottom: 25px;
+    text-align: center;
+    color: #000;
+}
+
+.footer-footer .footer-container .footer-privacypolicy .footer-sitedesign a {
+    color: #000;
+}
+
+.footer-footer .footer-container .footer-privacypolicy .footer-copyright {
+    font-size: 17px;
+    font-family: inter-reg;
+    padding-bottom: 30px;
+}
+
+.footer-footer .footer-container .footer-privacypolicy .footer-kurage {
+    font-size: 16px;
+    font-family: inter-reg;
+}
+
+.footer-footer .footer-container .footer-privacypolicy .footer-kurage a {
+    color: #d6d6d6;
+}
