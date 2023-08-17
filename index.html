@@ -25,20 +25,48 @@
         </marquee>
     <header>
         <div class="containerr">
-            <a href="/">
+            <a href="#">
                 <img class="navbar-logo" src="./Images/logo-dark1.png" alt="upgrade logo" width="95" height="43">
             </a>
             <div class="links">
-                <a class="navbar-link" href="/#who_is_this_course_for">Who Is This Course For?</a>
-                <a class="navbar-link" href="/#instructor">Instructor
+                <a class="navbar-link" href="#who_is_this_course_for">Who Is This Course For?</a>
+                <a class="navbar-link" href="#instructor">Instructor
                 </a>
-                <a class="navbar-link" href="/#curriculum">Curriculum
+                <a class="navbar-link" href="#curriculum">Curriculum
                 </a>
-                <a class="navbar-link" href="/#FAQS">FAQS</a>
-                <a class="navbar-link" href="/#book_your_seat">Book Your Seat</a>
+                <a class="navbar-link" href="#FAQS">FAQS</a>
+                <a class="navbar-link" href="#book_your_seat">Book Your Seat</a>
             </div>
         </div>
     </header>
+    <nav class="header2-mobheader">
+        <div class="header2-mobheader-container">
+            <div class="header2-mobheader-content">
+                <a class="header2-mobheader-logo" href="/">
+                    <img src="./Images/logo-dark1.png" alt="home logo">
+                </a>
+                <div>
+                    <div class="menu-toggle">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="#who_is_this_course_for">Who Is This Course For?</a></li>
+                            <li><a href="#instructor">Instructor</a></li>
+                            <li><a href="#curriculum">Curriculum</a></li>
+                            <li><a href="#FAQS">FAQs</a></li>
+                            <li><a href="#">Book Your Seat</a></li>
+                        </ul>
+                    </nav>                
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="header2-buttongradient">
+        <p>Book Your Seat ➡ </p>
+    </div>
     <main>
         <section class="section-1">
             <div class="section-1-content">
@@ -194,11 +222,11 @@
                         </h1>
                     </label>
                 </div>
-               <!--  <div class="section3-bottombutton-gradient">
+                <div class="section3-bottombutton-gradient2">
                     <p>
-                        Yes! Book my seat please!
+                        Yes! Book my seat please! &nbsp; ➡
                     </p>
-                </div> -->
+                </div>
             </div>
         </section>
         <section class="section-4" id="instructor">
@@ -525,6 +553,15 @@
             item.classList.toggle('active');
           });
         });
+
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+
+
+        menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        });
+
     </script>
 </body>
 </html>
